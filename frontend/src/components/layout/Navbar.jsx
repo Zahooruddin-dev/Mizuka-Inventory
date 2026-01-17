@@ -45,7 +45,7 @@ export default function Navbar() {
 					<div className='p-2 rounded-xl bg-gradient-to-r from-indigo-600 to-emerald-500'>
 						<CirclePile className='w-5 h-5 text-white transition-transform duration-500 ease-out group-hover:rotate-180' />
 					</div>
-					<h1 className='text-xl font-extrabold'>Khappa</h1>
+					<h1 className='text-xl font-extrabold'>Mizuka</h1>
 				</NavLink>
 
 				{/* Mobile Hamburger */}
