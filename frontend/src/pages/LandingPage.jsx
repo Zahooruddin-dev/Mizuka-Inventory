@@ -87,7 +87,7 @@ export default function LandingPage(){
                 <motion.div variants={itemVariants2} className="flex flex-col items-center justify-center">
                     <h1 className="text-5xl text-center md:text-6xl xl:text-7xl font-extrabold mt-3">Inventory Management,</h1>
                     <span className="text-5xl md:text-6xl xl:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-indigo-500 to-emerald-500 leading-none pb-2">Reimagined.</span>
-                    <p className="text-xl pl-5 pr-5 text-[#62748E] text-center max-w-2xl mt-2 ">Khappa streamline your product tracking with an elegant, powerful interface 
+                    <p className="text-xl pl-5 pr-5 text-[#62748E] text-center max-w-2xl mt-2 ">Mizuka streamline your product tracking with an elegant, powerful interface 
                     designed for modern businesses.</p>
                 </motion.div>
                 <motion.div variants={itemVariants2} className="flex items-center space-x-6 mt-6">

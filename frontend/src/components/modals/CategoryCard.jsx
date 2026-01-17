@@ -2,7 +2,7 @@ import { Package } from "lucide-react";
 import { NavLink } from "react-router";
 import { Trash2, PencilLine } from "lucide-react";
 import { useState } from "react";
-import BlurModalWrapper from "../modals/BlurModalWrapper";
+import BlurModalWrapper from "./BlurModalWrapper";
 import categoryService from "../../services/categoryService";
 import UpdateCategoryForm from "../Forms/UpdateCategoryForm";
 
