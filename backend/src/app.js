@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
 	cors({
-		origin: 'https://mizuka-inventory.vercel.app/',
+		origin: ['https://mizuka-inventory.vercel.app', 'http://localhost:5173'],
 		methods: ['GET', 'POST', 'PUT', 'DELETE'],
 		credentials: true,
 	}),
