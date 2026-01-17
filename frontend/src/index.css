@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+/* Custom Theme */
+
+@theme {
+    /* Fonts */
+    --font-sans: "Teachers", sans-serif;
+    --font-heading: "Urbanist", sans-serif;
+    --font-sans2: 'Inter', system-ui, sans-serif;
+
+}
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+    min-height: 100vh;
+    background: #FDFDFE;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+/* CSS Loader */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  
+    /* Tailwind equivalent gradient */
+    background: conic-gradient(
+      #4f46e5,   /* indigo-600 */
+      #10b981,   /* emerald-500 */
+      #4f46e5
+    );
+  
+    /* Border thickness */
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #000 0
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #000 0
+    );
+  
+    animation: spin 1.2s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loaderTwo {
+    width: 28px;
+    height: 28px;
+    border: 5px solid currentColor;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+  
+
+  /* Shimmer Loader */
+
+  /* Grid (same as real cards) */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.skeleton-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Image placeholder */
+.skeleton-image {
+  height: 160px;
+  background: #e5e7eb;
+}
+
+/* Content */
+.skeleton-content {
+  padding: 16px;
+}
+
+.skeleton-title {
+  height: 18px;
+  width: 60%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #e5e7eb;
+}
+
+.skeleton-text {
+  height: 14px;
+  width: 90%;
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+
+/* Shimmer animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
