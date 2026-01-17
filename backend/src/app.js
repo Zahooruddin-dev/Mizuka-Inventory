@@ -5,11 +5,11 @@ import cors from 'cors';
 const app = express();
 
 app.use(
-    cors({
-      origin: "https://khappa-frontend.vercel.app", // React dev server
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      credentials: true,
-    })
+	cors({
+		origin: 'https://mizuka-inventory.vercel.app/',
+		methods: ['GET', 'POST', 'PUT', 'DELETE'],
+		credentials: true,
+	}),
 );
 
 app.use(express.json());
@@ -19,4 +19,3 @@ app.use('/api/products', productsRouter);
 app.use('/api/categories', categoriesRouter);
 
 export default app;
-
